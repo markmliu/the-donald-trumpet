@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import tweepy
 import api_keys
 import simplejson
