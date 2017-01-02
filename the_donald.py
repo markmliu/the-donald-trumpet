@@ -13,7 +13,7 @@ class StdOutListener(StreamListener):
 
     def on_data(self, data):
         tweet_text =  simplejson.loads(data)["text"]
-        os.system("echo '{}' | say ".format(tweet_text))
+        os.system("echo '{}' | say ".format(tweet_text.encode('ascii', 'ignore')))
         return True
 
     def on_error(self, status):
@@ -27,4 +27,3 @@ if __name__ == '__main__':
     stream = Stream(auth, l)
     # Filter to only Donald Trump's tweets.
     stream.filter(follow=['25073877'])
-    
