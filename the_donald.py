@@ -1,7 +1,7 @@
 import tweepy
 import api_keys
 import simplejson
-import os
+import subprocess
 
 #Import the necessary methods from tweepy library
 from tweepy.streaming import StreamListener
@@ -12,8 +12,10 @@ from tweepy import Stream
 class StdOutListener(StreamListener):
 
     def on_data(self, data):
-        tweet_text =  simplejson.loads(data)["text"]
-        os.system("echo '{}' | say ".format(tweet_text.encode('ascii', 'ignore')))
+        tweet_text =  simplejson.loads(data)["text"].encode('ascii', 'ignore')
+        ps = subprocess.Popen(('echo', tweet_text), stdout=subprocess.PIPE)
+        subprocess.call(('say'), stdin=ps.stdout)
+        #subprocess.system("echo '{}' | say ".format(tweet_text.encode('ascii', 'ignore')))
         return True
 
     def on_error(self, status):
