@@ -6,7 +6,7 @@ Get API keys from twitter and create an api_keys file in same directory which de
 For example:
 
 ~~~~
-Variables that contains the user credentials to access Twitter API
+#Variables that contains the user credentials to access Twitter API
 access_token = "$$$"
 access_token_secret = "$$$"
 consumer_key = "$$$"
