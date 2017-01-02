@@ -22,7 +22,6 @@ class StdOutListener(StreamListener):
         # Ignore retweets.
         if  'RT @' in tweet_text:
             return True
-        print tweet_text        
         ps = subprocess.Popen(('echo', tweet_text), stdout=subprocess.PIPE)
         subprocess.call(('say'), stdin=ps.stdout)
         return True
