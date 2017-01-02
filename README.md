@@ -5,7 +5,7 @@ Command line utility for OS-x which subscribes to Donald Trump's tweets and read
 
 
 # Set up:
-Get API keys from twitter and create an api_keys file in same directory which declares the necessary api keys.
+Get API keys from twitter and create an `api_keys.py` file in same directory which declares the necessary api keys.
 For example:
 
 ~~~~
