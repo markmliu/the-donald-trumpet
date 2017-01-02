@@ -12,6 +12,4 @@ access_token_secret = "$$$"
 consumer_key = "$$$"
 consumer_secret = "$$$"
 ~~~~
-
-
-
+![If the press would cover me accurately & honorably, I would have far less reason to "tweet." Sadly, I don't know if that will ever happen!](https://github.com/markmliu/the-donald-trumpet/blob/master/images/ex1.png "Tweet example")
