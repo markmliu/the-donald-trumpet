@@ -17,6 +17,8 @@ consumer_secret = "$$$"
 ~~~~
 
 # Run:
-`chmod +x the_donald.py`
-`./the_donald.py`
+~~~~
+chmod +x the_donald.py
+./the_donald.py
+~~~~
 To run in the background: `./the_donald.py &`
